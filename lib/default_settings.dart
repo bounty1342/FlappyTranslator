@@ -25,4 +25,7 @@ class DefaultSettings {
 
   /// The default value for whether the generated code should replace no break spaces (\u00A0) with normal spaces (\u0020)
   static const replaceNoBreakSpaces = false;
+  
+  /// The default value for whether the generated code should replace provide methods over traduction
+  static const exposeTextTranslation = false;
 }
