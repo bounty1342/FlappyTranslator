@@ -47,6 +47,7 @@ const String templateDontDependContext = """
     return _localizedValues[key] ?? '** \$key not found';
   }
 
+
   static Locale get currentLocale => _locale;
 
   static String get currentLanguage => _locale.languageCode;
@@ -74,3 +75,17 @@ class #CLASS_NAME#Delegate extends LocalizationsDelegate<#CLASS_NAME#> {
 }
 
 """;
+
+const String templateAccessor = """
+
+  String getText(String key) {
+    return _getText(key);
+  }
+  
+  Map<String, String> map() {
+    return _allValues[locale.toString()];
+  }
+  
+""";
+
+  
